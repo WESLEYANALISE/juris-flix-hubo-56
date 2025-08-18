@@ -6,12 +6,14 @@ export const ProductCarousel = () => {
     data: livros,
     isLoading
   } = useLivrosIndicacao();
-  const { setCurrentFunction } = useNavigation();
+  const {
+    setCurrentFunction
+  } = useNavigation();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [shuffledLivros, setShuffledLivros] = useState([]);
 
   // Função para embaralhar array
-  const shuffleArray = (array) => {
+  const shuffleArray = array => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -59,7 +61,7 @@ export const ProductCarousel = () => {
   return <div className="w-full overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-r from-store-primary/5 to-premium-primary/5 shadow-lg sm:shadow-2xl border">
       {/* Título do Carrossel */}
       <div className="text-center py-3 sm:py-4 md:py-6 bg-gradient-to-r from-store-primary/10 to-premium-primary/10">
-        <h2 className="text-lg sm:text-xl md:text-2xl font-bold gradient-text-legal mb-1 sm:mb-2">📚 Nossos Livros em Destaque</h2>
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold gradient-text-legal mb-1 sm:mb-2">📚 Livros em Destaque</h2>
         <p className="text-xs sm:text-sm text-muted-foreground px-2 sm:px-4">Livros selecionados especialmente para seus estudos</p>
       </div>
       

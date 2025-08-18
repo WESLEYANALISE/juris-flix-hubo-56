@@ -3,6 +3,7 @@ import { FeaturesGrid } from '@/components/FeaturesGrid';
 import { QuickAccessSection } from '@/components/QuickAccessSection';
 import { ProductCarousel } from '@/components/ProductCarousel';
 import { FunctionCarousel } from '@/components/FunctionCarousel';
+import { ArtigosComentados } from '@/components/ArtigosComentados';
 import { AppFunction } from '@/components/AppFunction';
 import { SocialMediaFooter } from '@/components/SocialMediaFooter';
 import { MobileLayout } from '@/components/MobileLayout';
@@ -42,6 +43,9 @@ const Index = () => {
 
       {/* Quick Access Section */}
       <QuickAccessSection />
+
+      {/* Artigos Comentados Section */}
+      <ArtigosComentados />
 
       {/* Function Carousel Section */}
       <section className={`${isTablet ? 'px-2 mb-4' : 'px-3 sm:px-4 md:px-8 mb-6 sm:mb-8'}`}>

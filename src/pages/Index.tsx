@@ -28,42 +28,51 @@ const Index = () => {
     return <AppFunction />;
   }
 
-  // Main content for both mobile and desktop
+  // Main content for both mobile and desktop with improved spacing
   const mainContent = <>
-      {/* Top Product Carousel Section */}
-      <section className={`${isTablet ? 'px-2 mb-4 py-3' : 'px-3 sm:px-4 md:px-8 mb-6 sm:mb-8 py-[20px]'}`}>
+      {/* Hero Section - Melhorado */}
+      <section className={`${isTablet ? 'px-2 mb-6 py-4' : 'px-3 sm:px-4 md:px-8 mb-8 sm:mb-12 py-6'}`}>
         <div className={`${isTablet ? 'max-w-4xl' : 'max-w-7xl'} mx-auto`}>
-          <div className={`text-center ${isTablet ? 'mb-4' : 'mb-8'}`}>
-            
-            
+          <div className={`text-center ${isTablet ? 'mb-6' : 'mb-10'}`}>
+            <h1 className={`${isTablet ? 'text-2xl' : 'text-3xl sm:text-4xl md:text-5xl'} font-bold gradient-text-legal mb-4`}>
+              Sua Plataforma Jurídica Completa
+            </h1>
+            <p className={`${isTablet ? 'text-sm' : 'text-base sm:text-lg'} text-muted-foreground max-w-2xl mx-auto`}>
+              Estude direito com as melhores ferramentas, conteúdos atualizados e tecnologia de ponta
+            </p>
           </div>
           <ProductCarousel />
         </div>
       </section>
 
-      {/* Quick Access Section */}
+      {/* Quick Access Section - Melhorado */}
       <QuickAccessSection />
 
-      {/* Artigos Comentados Section */}
+      {/* Artigos Comentados Section - Melhorado */}
       <ArtigosComentados />
 
-      {/* Function Carousel Section */}
-      <section className={`${isTablet ? 'px-2 mb-4' : 'px-3 sm:px-4 md:px-8 mb-6 sm:mb-8'}`}>
+      {/* Function Carousel Section - Melhorado */}
+      <section className={`${isTablet ? 'px-2 mb-6' : 'px-3 sm:px-4 md:px-8 mb-8 sm:mb-12'}`}>
         <div className={`${isTablet ? 'max-w-4xl' : 'max-w-7xl'} mx-auto`}>
+          <div className={`text-center ${isTablet ? 'mb-4' : 'mb-8'}`}>
+            <h2 className={`${isTablet ? 'text-xl' : 'text-2xl sm:text-3xl'} font-bold gradient-text-legal mb-2`}>
+              Funções em Alta
+            </h2>
+            <p className={`${isTablet ? 'text-xs' : 'text-sm sm:text-base'} text-muted-foreground`}>
+              Descubra as ferramentas mais utilizadas pelos estudantes
+            </p>
+          </div>
           <FunctionCarousel />
         </div>
       </section>
 
-      {/* Features Grid */}
+      {/* Features Grid - Melhorado */}
       <FeaturesGrid />
 
-      {/* Enhanced CTA Section - Desktop and Tablet */}
-      {isDesktop || isTablet}
-
-      {/* Support Section - appears at the bottom of index page */}
+      {/* Support Section - Melhorado */}
       <SuporteTab />
 
-      {/* Social Media Footer */}
+      {/* Social Media Footer - Melhorado */}
       <SocialMediaFooter />
     </>;
 

@@ -3,42 +3,42 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Enhanced Legal Studies App - Professional Juridical Color Palette */
+/* Enhanced Legal Studies App - Modern Professional Design */
 
 @layer base {
   :root {
-    /* Premium Black & Gold Theme - Elegant Legal Design */
-    --background: 0 0% 4%;                 /* Deep premium black */
-    --foreground: 0 0% 96%;                /* Clean white text */
+    /* Modern Dark Theme - Premium Legal Design */
+    --background: 0 0% 2%;                 /* Ultra deep black */
+    --foreground: 0 0% 98%;                /* Bright white text */
 
-    --card: 0 0% 8%;                       /* Dark cards with subtle contrast */
-    --card-foreground: 0 0% 96%;
+    --card: 0 0% 6%;                       /* Modern dark cards */
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 6%;
-    --popover-foreground: 0 0% 96%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Vibrant Yellow System - Beautiful and Lively */
-    --primary: 48 100% 67%;                /* Vibrant beautiful yellow */
-    --primary-foreground: 0 0% 8%;
+    /* Modern Gold System - Luxurious and Professional */
+    --primary: 43 96% 70%;                 /* Refined gold */
+    --primary-foreground: 0 0% 4%;
 
-    --secondary: 0 0% 12%;                 /* Subtle dark secondary */
-    --secondary-foreground: 0 0% 94%;
+    --secondary: 0 0% 8%;                  /* Modern dark secondary */
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 0 0% 14%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 48 100% 67%;                 /* Vibrant yellow accent */
-    --accent-foreground: 0 0% 8%;
-    --accent-legal: 48 100% 67%;
+    --accent: 43 96% 70%;                  /* Refined gold accent */
+    --accent-foreground: 0 0% 4%;
+    --accent-legal: 43 96% 70%;
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 18%;                    /* Subtle dark borders */
-    --input: 0 0% 12%;
-    --ring: 42 100% 70%;
+    --border: 0 0% 15%;                    /* Modern subtle borders */
+    --input: 0 0% 8%;
+    --ring: 43 96% 70%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
     /* Premium Sidebar - Deep Black with Gold Accents */
     --sidebar-background: 0 0% 2%;

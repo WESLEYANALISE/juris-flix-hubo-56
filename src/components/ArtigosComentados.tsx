@@ -54,13 +54,20 @@ export const ArtigosComentados = () => {
             </div>
           </div>
           
-          <div className="flex gap-3 mx-[75px]">
+          <div className="flex flex-col sm:flex-row gap-3">
             <Button onClick={handleAccessClick} className="flex items-center gap-2">
               <BookOpen className="w-4 h-4" />
               Acessar Artigos
             </Button>
             
-            {artigosComentados.link}
+            {artigosComentados.link && (
+              <Button variant="outline" asChild className="flex items-center gap-2">
+                <a href={artigosComentados.link} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="w-4 h-4" />
+                  Acessar Link
+                </a>
+              </Button>
+            )}
           </div>
         </div>
       </div>

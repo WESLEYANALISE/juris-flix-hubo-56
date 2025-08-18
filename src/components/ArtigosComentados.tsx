@@ -60,14 +60,9 @@ export const ArtigosComentados = () => {
               Acessar Artigos
             </Button>
             
-            {artigosComentados.link && (
-              <Button variant="outline" asChild className="flex items-center gap-2">
-                <a href={artigosComentados.link} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="w-4 h-4" />
-                  Acessar Link
-                </a>
-              </Button>
-            )}
+            {artigosComentados.link && <Button variant="outline" asChild className="flex items-center gap-2">
+                
+              </Button>}
           </div>
         </div>
       </div>

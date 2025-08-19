@@ -58,11 +58,11 @@ export const ProductCarousel = () => {
         <p className="text-sm text-muted-foreground">Livros em breve...</p>
       </div>;
   }
-  return <div className="w-full overflow-hidden rounded-2xl bg-gradient-to-br from-card/95 to-card/80 backdrop-blur-xl shadow-2xl border border-border/30 hover:shadow-primary/10 transition-all duration-500">
-      {/* Título melhorado */}
-      <div className="text-center py-6 sm:py-8 bg-gradient-to-r from-primary/10 via-transparent to-primary/10">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold gradient-text-legal mb-2 sm:mb-3">📚 Livros em Destaque</h2>
-        <p className="text-sm sm:text-base text-muted-foreground px-4 sm:px-6">Livros selecionados especialmente para seus estudos jurídicos</p>
+  return <div className="w-full overflow-hidden rounded-xl sm:rounded-2xl bg-gradient-to-r from-store-primary/5 to-premium-primary/5 shadow-lg sm:shadow-2xl border">
+      {/* Título do Carrossel */}
+      <div className="text-center py-3 sm:py-4 md:py-6 bg-gradient-to-r from-store-primary/10 to-premium-primary/10">
+        <h2 className="text-lg sm:text-xl md:text-2xl font-bold gradient-text-legal mb-1 sm:mb-2">📚 Livros em Destaque</h2>
+        <p className="text-xs sm:text-sm text-muted-foreground px-2 sm:px-4">Livros selecionados especialmente para seus estudos</p>
       </div>
       
       {/* Carrossel de Imagens - Agora tocável */}

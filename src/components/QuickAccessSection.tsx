@@ -44,25 +44,22 @@ export const QuickAccessSection = () => {
       setCurrentFunction(item.functionName);
     }
   };
-  return <div className={`bg-gradient-to-br from-card/95 to-card/80 backdrop-blur-xl rounded-2xl ${isTablet ? 'p-4 mx-2 mb-6' : 'p-6 sm:p-8 mx-3 sm:mx-4 mb-8'} border border-border/30 text-center shadow-2xl glass-effect-modern hover:shadow-primary/10 transition-all duration-500`}>
-      {/* Título melhorado */}
-      <div className="text-center mb-6">
-        <h2 className={`${isTablet ? 'text-lg' : 'text-xl sm:text-2xl'} font-bold gradient-text-legal mb-2`}>Acesso Rápido</h2>
-        <p className={`${isTablet ? 'text-xs' : 'text-sm'} text-muted-foreground`}>Suas ferramentas favoritas em um clique</p>
-      </div>
+  return <div className={`bg-card/90 backdrop-blur-sm rounded-xl ${isTablet ? 'p-3 mx-2 mb-4' : 'p-4 sm:p-6 mx-3 sm:mx-4 mb-6'} border border-border/50 text-center shadow-lg glass-effect-modern`}>
+      {/* Título */}
+      <h2 className={`${isTablet ? 'text-sm' : 'text-base sm:text-lg'} font-semibold text-foreground ${isTablet ? 'mb-3' : 'mb-4'}`}>Acesso Rápido</h2>
       
-      {/* Grid responsivo melhorado */}
-      <div className={`flex justify-center items-center ${isTablet ? 'gap-4' : 'gap-6 sm:gap-8'} mt-6`}>
+      {/* Grid responsivo de itens */}
+      <div className={`flex justify-center items-center ${isTablet ? 'gap-3' : 'gap-4 sm:gap-6'} mt-4`}>
         {quickItems.slice(0, 5).map((item, index) => <div key={item.id} onClick={() => handleItemClick(item)} style={{
         animationDelay: `${index * 100}ms`
       }} className="group cursor-pointer transition-all duration-300 hover:scale-105 mx-[2px]">
-            {/* Círculo melhorado com gradiente e animações */}
-            <div className={`${isTablet ? 'w-14 h-14 mb-2' : 'w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 mb-3'} mx-auto rounded-2xl bg-gradient-to-br from-primary to-primary/80 flex items-center justify-center transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 shadow-xl shadow-primary/30 group-hover:shadow-2xl group-hover:shadow-primary/50 animate-float-gentle`}>
-              <item.icon className={`${isTablet ? 'w-6 h-6' : 'w-7 h-7 sm:w-8 sm:h-8 lg:w-9 lg:h-9'} text-primary-foreground icon-hover-bounce`} />
+            {/* Círculo responsivo com ícone */}
+            <div className={`${isTablet ? 'w-10 h-10 mb-1' : 'w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 mb-2'} mx-auto rounded-full bg-primary flex items-center justify-center transition-all duration-300 group-hover:bg-primary/90 shadow-lg shadow-primary/25 group-hover:shadow-xl group-hover:shadow-primary/40`}>
+              <item.icon className={`${isTablet ? 'w-5 h-5' : 'w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7'} text-black icon-hover-bounce`} />
             </div>
             
-            {/* Texto melhorado */}
-            <p className={`${isTablet ? 'text-xs max-w-16' : 'text-xs sm:text-sm lg:text-sm max-w-18 sm:max-w-20 lg:max-w-24'} font-semibold mx-auto leading-tight transition-all duration-300 text-foreground group-hover:text-primary text-center`}>
+            {/* Texto responsivo abaixo */}
+            <p className={`${isTablet ? 'text-xs max-w-12' : 'text-xs sm:text-xs lg:text-sm max-w-14 sm:max-w-16 lg:max-w-20'} font-medium mx-auto leading-tight transition-colors duration-300 text-foreground group-hover:text-primary text-center`}>
               {item.title}
             </p>
           </div>)}

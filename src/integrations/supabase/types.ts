@@ -131,6 +131,36 @@ export type Database = {
         }
         Relationships: []
       }
+      "ARITIGOS-COMENTADOS": {
+        Row: {
+          Area: string | null
+          artigo: string | null
+          audio: string | null
+          capa: string | null
+          id: number
+          Planalto: string | null
+          texto: string | null
+        }
+        Insert: {
+          Area?: string | null
+          artigo?: string | null
+          audio?: string | null
+          capa?: string | null
+          id?: number
+          Planalto?: string | null
+          texto?: string | null
+        }
+        Update: {
+          Area?: string | null
+          artigo?: string | null
+          audio?: string | null
+          capa?: string | null
+          id?: number
+          Planalto?: string | null
+          texto?: string | null
+        }
+        Relationships: []
+      }
       banco_erros: {
         Row: {
           created_at: string | null
@@ -193,6 +223,42 @@ export type Database = {
           tags?: string[] | null
           titulo?: string
           user_id?: string | null
+        }
+        Relationships: []
+      }
+      "BIBLIOTECA-CLASSICOS": {
+        Row: {
+          area: string | null
+          autor: string | null
+          beneficios: string | null
+          download: string | null
+          id: number
+          imagem: string | null
+          link: string | null
+          livro: string | null
+          sobre: string | null
+        }
+        Insert: {
+          area?: string | null
+          autor?: string | null
+          beneficios?: string | null
+          download?: string | null
+          id?: number
+          imagem?: string | null
+          link?: string | null
+          livro?: string | null
+          sobre?: string | null
+        }
+        Update: {
+          area?: string | null
+          autor?: string | null
+          beneficios?: string | null
+          download?: string | null
+          id?: number
+          imagem?: string | null
+          link?: string | null
+          livro?: string | null
+          sobre?: string | null
         }
         Relationships: []
       }
@@ -297,6 +363,36 @@ export type Database = {
           created_at?: string
           id?: string
           note_text?: string
+          user_ip?: string
+        }
+        Relationships: []
+      }
+      book_reading_progress: {
+        Row: {
+          book_id: number
+          created_at: string
+          id: string
+          is_currently_reading: boolean
+          last_accessed_at: string
+          started_reading_at: string
+          user_ip: string
+        }
+        Insert: {
+          book_id: number
+          created_at?: string
+          id?: string
+          is_currently_reading?: boolean
+          last_accessed_at?: string
+          started_reading_at?: string
+          user_ip: string
+        }
+        Update: {
+          book_id?: number
+          created_at?: string
+          id?: string
+          is_currently_reading?: boolean
+          last_accessed_at?: string
+          started_reading_at?: string
           user_ip?: string
         }
         Relationships: []

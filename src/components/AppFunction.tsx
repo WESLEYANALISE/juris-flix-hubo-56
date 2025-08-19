@@ -12,6 +12,7 @@ import { Premium } from '@/components/Premium';
 import { PremiumRequired } from '@/components/PremiumRequired';
 import { AssistenteIA } from '@/components/AssistenteIA';
 import { BibliotecaClassicos } from '@/components/BibliotecaClassicos';
+import { BibliotecaJuridica } from '@/components/BibliotecaJuridica';
 import { Loja } from '@/components/Loja';
 import { RatingCard } from '@/components/RatingCard';
 import { BancoQuestoes } from '@/components/BancoQuestoes';
@@ -81,8 +82,10 @@ export const AppFunction = () => {
         return <AssistenteIA />;
 
       // Funções sem restrições
-      case 'Biblioteca de Clássicos':
-        return <BibliotecaClassicos />;
+    case 'Biblioteca de Clássicos':
+      return <BibliotecaClassicos />;
+    case 'Biblioteca Jurídica':
+      return <BibliotecaJuridica />;
       case 'Mapas Mentais':
         return <div className="flex items-center justify-center h-full">
             <div className="text-center p-8">

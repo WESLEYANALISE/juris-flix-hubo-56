@@ -181,8 +181,8 @@ export const FeaturesGrid = () => {
                   className="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 text-white p-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-                      <Library className="w-6 h-6 text-primary-foreground" />
+                    <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
+                      <Library className="w-6 h-6 text-white" />
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-semibold">Biblioteca Jurídica</h3>
@@ -200,47 +200,12 @@ export const FeaturesGrid = () => {
                   className="group relative overflow-hidden bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white p-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-                      <BookOpen className="w-6 h-6 text-primary-foreground" />
+                    <div className="w-12 h-12 rounded-lg bg-white/20 flex items-center justify-center">
+                      <BookOpen className="w-6 h-6 text-white" />
                     </div>
                     <div className="text-left">
                       <h3 className="text-lg font-semibold">Biblioteca de Clássicos</h3>
                       <p className="text-white/80 text-sm">Obras essenciais da literatura jurídica</p>
-                    </div>
-                  </div>
-                </button>
-
-                {/* Biblioteca de Habilidades Pessoais */}
-                <button
-                  onClick={handleBibliotecaHabilidades}
-                  className="group relative overflow-hidden bg-gradient-to-r from-purple-500 to-violet-600 hover:from-purple-600 hover:to-violet-700 text-white p-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-                      <Brain className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div className="text-left">
-                      <h3 className="text-lg font-semibold">Biblioteca de Habilidades Pessoais</h3>
-                      <p className="text-white/80 text-sm">Desenvolvimento pessoal e profissional</p>
-                    </div>
-                  </div>
-                </button>
-
-                {/* Indicações de Livros */}
-                <button
-                  onClick={() => {
-                    handleFunctionClick('Indicações de Livros');
-                    setIsDialogOpen(false);
-                  }}
-                  className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white p-6 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl"
-                >
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center">
-                      <Star className="w-6 h-6 text-primary-foreground" />
-                    </div>
-                    <div className="text-left">
-                      <h3 className="text-lg font-semibold">Indicações de Livros</h3>
-                      <p className="text-white/80 text-sm">Leituras obrigatórias e recomendadas</p>
                     </div>
                   </div>
                 </button>
